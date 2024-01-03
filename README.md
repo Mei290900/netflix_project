@@ -1,2 +1,1 @@
-# netflix_project 
- 
+Netflix Clone Website Project 

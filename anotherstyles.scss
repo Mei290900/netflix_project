@@ -1,0 +1,221 @@
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 100;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 300;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 500;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 700;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff)
+      format("woff");
+}
+
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 900;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff)
+      format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+.header2 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(netflix_background.jpg);
+    object-fit: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header2 .logo {
+  justify-content: left;
+  display: flex;
+  padding: 50px 40px;
+  width: 200px;
+}
+
+form{
+  width: 400px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  // width: 100%;  
+  padding: 60px;
+  
+}
+h3 {
+  color:#fff;
+  font-size: 30px;
+  font-weight: 500px;
+  margin-bottom: 30px;
+
+}
+input{
+  margin-bottom:15px;
+  padding: 15px 3px;
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  background-color:#343434;
+  font-size: 15px;
+}
+form .signinbtn{
+  padding: 15px 3px;
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  background-color: red;
+  color:#fff;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.needhelp .rememberMe {
+  // display: inline-block;
+  // top:0;
+  width: 15px;
+  height:10px;  
+  margin-top: 15px; 
+  font-size: 7px;
+ 
+}
+
+.needhelp {
+  display: flex;
+  justify-content: space-between;
+}
+
+a{
+  margin-top:10px;
+  color: #343434;  
+}
+a:hover{
+  color: white;
+}
+
+// -----2------
+
+.signup {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.signup p {
+	margin-right: 5px;
+}
+
+.more {
+	font-size: 0.8em;
+	line-height: 1.1em;
+}
+
+.more a {
+	color: rgb(17, 108, 228);
+}
+
+.more a:hover,
+.signup a:hover {
+	text-decoration: underline;
+}
+
+// ----footer-----
+
+footer {
+	position: absolute;
+	margin-top: 50px;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 200px;
+}
+
+.ftr-content {
+	margin-left: 10%;
+	padding-top: 20px;
+	font-size: 1em;
+}
+
+.ftr-content a {
+	color: #999;
+}
+
+.ftr-content a:hover {
+	text-decoration: underline;
+  color:white;
+}
+
+.contact {
+	margin-bottom: 30px;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+.ftr {
+	margin-bottom: 30px;
+	width: 70%;
+	font-size: 0.8em;
+	display: flex;
+	justify-content: space-between;
+}

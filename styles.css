@@ -1,0 +1,507 @@
+@import url();
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 100;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 300;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 400;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 500;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 700;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format("woff");
+}
+@font-face {
+  font-display: optional;
+  font-family: Netflix Sans;
+  font-weight: 900;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format("woff2"), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.8) 100%), url(netflix_background.jpg);
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-position: center;
+  position: relative;
+  min-height: 30rem;
+  background-size: cover;
+}
+
+nav {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 20px;
+}
+
+.header nav .logo {
+  width: 7rem;
+}
+
+.header nav button {
+  width: 5rem;
+  height: 2rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.header .content {
+  position: absolute;
+  margin: 0;
+  inset: 0;
+  text-align: center;
+  top: 30%;
+  line-height: 3rem;
+  padding: 0 10px;
+}
+
+.header .content h1 {
+  font-size: clamp(32px, 20%, 48px);
+}
+
+.header .content p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+.header .content .email {
+  width: 20rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-right: 0.9px;
+  padding-left: 20px;
+  border: 1px solid #5e5e5e;
+  color: #fff;
+}
+
+.header .content button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+
+hr {
+  height: 0.5rem;
+  background-color: #2e2e2e;
+  outline: 0;
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  height: 60vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+.container .left-side {
+  font-size: clamp(16px, 10%, 48px);
+  text-align: center;
+  margin: 16px auto;
+}
+.container .right-side {
+  max-height: 500px;
+}
+.container .right-side .wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
+}
+.container .right-side .wrapper img {
+  max-width: 300px;
+}
+.container .right-side .wrapper video {
+  position: absolute;
+  max-width: 300px;
+  max-height: 200px;
+  top: 2rem;
+  left: 0rem;
+  z-index: -1;
+}
+
+.container2 {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 10px;
+}
+.container2 img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  align-self: center;
+  align-items: center;
+  height: 15rem;
+}
+.container2 .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container2 .text h1 {
+  font-size: clamp(32px, 20%, 48px);
+}
+.container2 .text p {
+  font-size: clamp(18px, 10%, 32px);
+  margin: 16px;
+}
+
+.container3 {
+  height: 40vh;
+  background-color: black;
+  display: flex;
+  padding: 45px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container3 .text h1 {
+  font-size: clamp(32px, 20%, 48px);
+}
+
+.container3 .text p {
+  font-size: clamp(18px, 20%, 32px);
+  margin-top: 20px;
+}
+
+.container4 img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  align-self: center;
+  height: 15rem;
+}
+
+.container4 .kid {
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.container4 {
+  height: 70vh;
+  background-color: black;
+  padding: 56px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container4 .text h1 {
+  font-size: clamp(32px, 20%, 48px);
+}
+
+.container4 .text p {
+  font-size: clamp(18px, 20%, 32px);
+  margin-top: 20px;
+}
+
+.footer-content {
+  margin: 0 20px;
+  padding: 20px 0;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: row;
+  justify-content: initial;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 15px 0;
+}
+
+li {
+  display: flex;
+  padding-top: 12px;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.select .optionbtn {
+  width: 3.4rem;
+  height: 1rem;
+}
+.select .optionbtn p {
+  padding: 2rem 0;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    height: 40vh;
+  }
+  .header .content {
+    top: 40%;
+  }
+  .header nav {
+    margin: 0 2rem;
+    height: 5rem;
+  }
+  .container {
+    margin: 0;
+    flex-direction: column-reverse;
+    height: auto;
+    display: flex;
+    padding: 72px 0;
+  }
+  .container .left-side {
+    justify-content: center;
+    order: 1;
+    text-align: center;
+  }
+  .container .right-side {
+    width: auto;
+    max-height: 500px;
+    align-self: center;
+  }
+  .container .right-side .wrapper {
+    max-width: 500px;
+    max-height: 400px;
+  }
+  .container .right-side .wrapper img {
+    max-width: 545px;
+  }
+  .container .right-side .wrapper video {
+    max-width: 500px;
+    max-height: 400px;
+    top: 4rem;
+    left: 3rem;
+  }
+  .container2 {
+    margin: 0;
+    flex-direction: column-reverse;
+    height: auto;
+    display: flex;
+    padding: 72px 0;
+  }
+  .container2 img {
+    order: 2;
+    height: 30rem;
+  }
+  .container2 .text {
+    order: 1;
+    text-align: center;
+  }
+  .container3 {
+    height: 18vh;
+    padding: 72px 0;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .container4 {
+    flex-direction: column-reverse;
+    height: 60vh;
+    display: flex;
+    margin: 0;
+    text-align: center;
+  }
+  .container4 img {
+    height: 30rem;
+  }
+  .footer-content {
+    padding: 30px 0;
+    display: grid;
+    justify-content: initial;
+  }
+  .footer-content ul {
+    -moz-column-count: 3;
+         column-count: 3;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    height: 45vh;
+  }
+  .header .content {
+    top: 35%;
+    line-height: 4rem;
+  }
+  .header .content h1 {
+    font-size: 3rem;
+  }
+  .header .content .email {
+    width: 25rem;
+    height: 4rem;
+    font-size: 20px;
+  }
+  .header .content button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+  .header nav {
+    height: 5rem;
+    margin: 0 2rem;
+  }
+  .container {
+    height: auto;
+    padding: 4.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    text-align: initial;
+  }
+  .container .left-side {
+    width: 50%;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .container .right-side {
+    width: 50%;
+  }
+  .container .right-side .wrapper {
+    max-width: 552px;
+    max-height: 400px;
+  }
+  .container .right-side .wrapper img {
+    max-width: 550px;
+  }
+  .container .right-side .wrapper video {
+    max-width: 500px;
+    max-height: 400px;
+    top: 3rem;
+    left: 2rem;
+  }
+  .container2 {
+    width: 100%;
+    height: 40vh;
+    padding: 4.5rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .container2 img {
+    height: 20rem;
+  }
+  .container2 .text {
+    width: 50%;
+    text-align: initial;
+  }
+  .container2 .text h1 {
+    font-size: 3rem;
+  }
+  .container2 .text p {
+    font-size: 1.5rem;
+  }
+  .container3 {
+    width: 50%;
+    height: 30vh;
+    padding: 4.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    text-align: initial;
+  }
+  .container3 .text h1 {
+    font-size: 3rem;
+  }
+  .container3 .text p {
+    font-size: 1.5rem;
+  }
+  .container4 {
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .container4 img {
+    height: 23rem;
+  }
+  .container4 .text {
+    text-align: initial;
+  }
+  .container4 .text h1 {
+    font-size: 3rem;
+  }
+  .container4 .text p {
+    font-size: 1.5rem;
+  }
+  .footer-content {
+    padding: 30px 0;
+    display: grid;
+    justify-content: initial;
+  }
+  .footer-content ul {
+    -moz-column-count: 4;
+         column-count: 4;
+    padding: 20px 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

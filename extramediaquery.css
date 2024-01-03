@@ -1,0 +1,240 @@
+@media only screen and (max-width: 430px) {
+    .header {
+      height: 55vh;
+    }
+    .header .logo_section {
+      padding: 1.5rem;
+    }
+    .header .logo_section .logo {
+      width: 5rem;
+      height: 1.5rem;
+    }
+    .header .logo_section button {
+      width: 4rem;
+      height: 2rem;
+      font-size: 0.8rem;
+    }
+    .header .content {
+      top: 25%;
+      line-height: 2.3rem;
+      margin: 0rem 2rem;
+    }
+    .header .content h2 {
+      font-size: 2rem;
+    }
+    .header .content h3 {
+      font-size: 1rem;
+    }
+    .header .content p {
+      font-size: 1rem;
+      line-break: auto;
+    }
+    .header input {
+      margin: 10px;
+    }
+    .container {
+      position: relative;
+      display: inline-block;
+      height: 30vh;
+    }
+    .container .left-side {
+      display: inline;
+      align-items: center;
+    }
+    .container .left-side h2 {
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 2rem;
+    }
+    .container .left-side p {
+      font-size: 0.7rem;
+      margin-left: 1rem;
+      text-align: center;
+    }
+    
+    .container .right-side {
+      margin-left: 3rem;
+    }
+    .container .right-side .wrapper img {
+      width: 30rem;
+      margin: 0 auto;
+      align-items: center;
+      padding-right: 12rem;
+    }
+    .container .right-side .wrapper video {
+      align-items: center;
+      width: 20rem;
+      margin: 0 auto;
+    }
+    .container2 {
+      flex-direction: column-reverse;
+    }
+    .container2 .image2 {
+      order: 1;
+    }
+    .container2 .text {
+      order: 2;
+      text-align: center;
+    }
+    .container2 .text h2 {
+      font-size: 2rem;
+    }
+    .container2 .text p {
+      font-size: 1.3rem;
+    }
+    .container3 {
+      height: 15rem;
+      padding: 2rem;
+    }
+    .container3 .text h2 {
+      font-size: 2rem;
+    }
+    .container3 .text p {
+      font-size: 1.3rem;
+    }
+    .container4 {
+      flex-direction: column-reverse;
+    }
+    .container4 div img {
+      order: 2;
+    }
+    .container4 .text {
+      order: 1;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container4 .text h2 {
+      font-size: 2rem;
+    }
+    .container4 .text p {
+      font-size: 1.3rem;
+    }
+    
+    .footer-content .footer{
+      box-sizing: border-box;
+      display: grid;
+  
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .header {
+      height: 40vh;
+    }
+    .header .logo_section {
+      padding: 1.3rem;
+    }
+    .header .logo_section .logo {
+      width: 5rem;
+      height: 1.5rem;
+    }
+    .header .logo_section button {
+      width: 4rem;
+      height: 2rem;
+      font-size: 0.8rem;
+    }
+    .header .content {
+      top: 25%;
+    }
+    .header .content h2 {
+      font-size: 2rem;
+    }
+    .header .content h3 {
+      font-size: 1rem;
+    }
+    .header .content p {
+      font-size: 1rem;
+      line-break: auto;
+    }
+    .container {
+      position: relative;
+      display: inline-block;
+      height: 30vh;
+    }
+    .container .left-side {
+      display: inline;
+      align-items: center;
+    }
+    .container .left-side h2 {
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem;
+    }
+    .container .left-side p {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      text-align: center;
+    }
+    .container .right-side {
+      margin-left: 7rem;
+    }
+    .container .right-side .wrapper video {
+      top: 6rem;
+      left: 5rem;
+      align-items: center;
+    }
+    .container2 {
+      flex-direction: column-reverse;
+      height: 40rem;
+    }
+    .container2 .image2 {
+      order: 1;
+      width: 200rem;
+    }
+    .container2 .text {
+      order: 2;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .container2 .text h2 {
+      font-size: 2rem;
+    }
+    .container2 .text p {
+      font-size: 1.3rem;
+    }
+    .container3 {
+      height: 15rem;
+      text-align: center;
+    }
+    .container3 .text h2 {
+      font-size: 2rem;
+    }
+    .container3 .text p {
+      font-size: 1.3rem;
+    }
+    .container4 {
+      flex-direction: column-reverse;
+    }
+    .container4 div img {
+      order: 2;
+    }
+    .container4 .text {
+      order: 1;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container4 .text h2 {
+      font-size: 2rem;
+    }
+    .container4 .text p {
+      font-size: 1.3rem;
+    }
+  }
+  @media only screen and (max-width: 1024px){
+    .container .right-side{
+      width: 70%;    
+    }
+    .container .left-side {
+      display: inline;
+      align-items: center;
+    }
+    .container .left-side h2 {
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem;
+    }
+    .container .left-side p {
+      font-size: 1rem;
+      margin-left: 1rem;
+      text-align: center;
+  }
+  }
